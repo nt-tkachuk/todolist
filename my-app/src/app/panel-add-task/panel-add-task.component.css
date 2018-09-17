@@ -1,0 +1,47 @@
+.panel {
+  height: 400px;
+  background: linear-gradient(to bottom, #e0e0e0 5%, #bfbebf 85%);
+  border: thin solid #aaaaaa;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px #19366d;
+}
+
+.verticalAlign {
+  background: #ff0000;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+}
+
+.but {
+  background: linear-gradient(to bottom, #8fc6a8 40%, #69a081 60%, #447557 99%);
+  border: thin solid #447557;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px #19366d;
+  border-radius: 0px 3px 3px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.input {
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+  padding-left: 5px;
+  font-size: 12px;
+  height: 15px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #bbbbbb;
+}
+
+:-ms-input-placeholder { /* Microsoft Edge */
+  color: #bbbbbb;
+}
