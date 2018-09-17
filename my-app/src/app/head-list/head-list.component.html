@@ -1,0 +1,26 @@
+<div [ngStyle] = "{'width.px': this._width, 'height.px': this._height, 'cursor': 'pointer'}" class="panel" (mousedown)="mousedown($event)" >
+
+  <tr [ngStyle] = "{'height.px': this.otstup}"></tr> <!--отступ сверху-->
+  <tr [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'vertical-align': 'middle'}">
+    <td [ngStyle] = "{'width.px': this.otstup}"></td> <!--отступ-->
+    <td>
+      <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width': 'auto'}" [src]="link">
+    </td>
+    <td [ngStyle] = "{'width.px': this.otstup/2}"></td> <!--отступ-->
+    <td [ngStyle] = "{'width.px': this._width - this.otstup * 2 - this.otstup/2*3 - (this._height - this.otstup * 2)*3}"> {{text}}</td>
+    <td>
+      <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width': 'auto'}" [src]="link1" name="Edit" > <!-- редактировать-->
+    </td>
+    <td [ngStyle] = "{'width.px': this.otstup/2}"></td> <!--отступ-->
+    <td>
+      <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width.px': 2}" [src]="link3"> <!-- линия -->
+    </td>
+    <td [ngStyle] = "{'width.px': this.otstup/2}"></td> <!--отступ-->
+    <td>
+      <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width': 'auto'}" [src]="link2" name="Delete" > <!--Удвлить -->
+    </td>
+    <td [ngStyle] = "{'width.px': this.otstup}"></td> <!--отступ-->
+  </tr>
+  <tr [ngStyle] = "{'height.px': this.otstup}"></tr> <!--отступ снизу-->
+</div>
+<!--src="assets\cat_purr.png""-->

@@ -1,0 +1,19 @@
+.panel {
+  height: 400px;
+  background: linear-gradient(to bottom, #8cafd4 4%, #5182bf 4%, #3a5c9d 84%);
+  border: thin solid #315589;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px #19366d;
+}
+
+.verticalAlign {
+  background: #ff0000;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+}
+
+td {
+  /*border: 1px solid blue;*/
+}
