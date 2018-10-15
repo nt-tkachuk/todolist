@@ -1,23 +1,23 @@
 <div [ngStyle] = "{'width.px': this._width, 'height.px': this._height}" class="panel" >
 
-  <tr [ngStyle] = "{'height.px': this.otstup}"></tr> <!--отступ сверху-->
-  <tr [ngStyle] = "{'height.px': this._height - this.otstup*2, 'vertical-align': 'middle'}">
+  <!--<tr [ngStyle] = "{'height.px': this.otstup}"></tr> &lt;!&ndash;отступ сверху&ndash;&gt;-->
+  <tr [ngStyle] = "{'height.px': this._height, 'vertical-align': 'middle'}">
     <td [ngStyle] = "{'width.px': this.otstup}"></td> <!--отступ-->
     <td>
       <img  [src]="link"
             [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width': 'auto'}"
       >
     </td>
-    <td [ngStyle] = "{'width.px': this.otstup/2}"></td> <!--отступ-->
+    <td [ngStyle] = "{'width.px': this.otstup}"></td> <!--отступ-->
     <td>
-    </td>
     <input name = 'textPlaceholder'
            type = 'text'
            class = "input"
            value = "{{text}}"
            placeholder = "{{textPlaceholder}}"
-           [ngStyle] = "{'width.px': this._width - wButton - this.otstup * 5  - this.otstup / 2}"
+           [ngStyle] = "{'width.px': this._width - wButton - this.otstup * 6, 'vertical-align': 'middle'}"
     >
+    </td>
     <td>
       <button name = "butAdd"
               class = "but"
@@ -28,6 +28,6 @@
         Add Task
       </button>
     </td>
-  <tr [ngStyle] = "{'height.px': this.otstup}"></tr> <!--отступ снизу-->
+  <!--<tr [ngStyle] = "{'height.px': this.otstup}"></tr> &lt;!&ndash;отступ снизу&ndash;&gt;-->
 </div>
 <!--src="assets\cat_purr.png""-->

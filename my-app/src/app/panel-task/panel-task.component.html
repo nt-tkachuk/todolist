@@ -1,0 +1,85 @@
+<div [ngStyle] = "{
+    'background': this.isOver ? '#fcfed5' : '#ffffff',
+    'width.px': this._width,
+    'height.px': this._height,
+    'cursor': 'pointer'
+  }"
+     class = "panel"
+     (mousedown) = "mousedown($event)"
+     (mouseover) = "mouseover($event)"
+     (mouseout) = "mouseout($event)"
+>
+  <table [ngStyle] = "{'height.px': this._height, 'vertical-align': 'middle'}">
+    <tr>
+      <td [ngStyle] = "{'width.px': this.otstup/3}"></td> <!--отступ-->
+      <td class="tdLineRight">
+        <input type = "checkbox" [checked] = "isDone" (change)="isDone = !isDone"/>
+      </td>
+      <td class="tdLineRight"
+          [ngStyle] = "{'width.px': this.otstup/4}"
+      >
+      <td [ngStyle] = "{'width.px': this.otstup/4}"
+      >
+      </td> <!--отступ-->
+      <td
+        class = "text tdLineRightGrey "
+        [ngStyle] = "{'width.px': this._width - this.otstup * 2 - this.otstup/2*3 - (this._height - this.otstup * 2)*3}"
+      >
+        {{text}}
+      </td>
+      <td [ngStyle] = "{'width.px': this.otstup/2}"></td>
+      <td [ngStyle] = "{'width.px': 70, 'height.px': 10}">
+        <table align="center">
+          <tr>
+            <td class="tdLineRightGrey">
+              <img  name = "Edit"
+                    [src] = "link1"
+                    [ngStyle] = "{
+                      'height.px': this._height - this.otstup * 2 - this.otstup / 3,
+                      'width': 'auto'
+                    }"
+              >
+            </td>
+            <td class="tdLineRightGrey">
+              <img  name = "Edit"
+                    [src] = "link1"
+                    [ngStyle] = "{
+                      'height.px': this._height - this.otstup * 2 - this.otstup / 3,
+                      'width': 'auto'
+                    }"
+              >
+            </td>
+            <td>
+              <img  name = "Edit"
+                    [src] = "link1"
+                    [ngStyle] = "{
+                      'height.px': this._height - this.otstup * 2 - this.otstup / 3,
+                      'width': 'auto'
+                    }"
+              >
+            </td>
+          </tr>
+        </table>
+      </td>
+      <!--<td [ngStyle] = "{'width.px': this.otstup/2}"></td>
+      <td>
+
+        <img  name = "Edit"
+              [src] = "link1"
+              [ngStyle] = "{
+                'height.px': this._height - this.otstup * 2,
+                'width': 'auto'
+              }"
+        >
+      </td>
+      <td>
+        <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width.px': 2}" [src]="link3">
+      </td>
+      <td [ngStyle] = "{'width.px': this.otstup/2}"></td>
+      <td>
+        <img  [ngStyle] = "{'height.px': this._height - this.otstup * 2, 'width': 'auto'}" [src]="link2" name="Delete" >
+      </td>-->
+      <td [ngStyle] = "{'width.px': this.otstup}"></td> <!--отступ-->
+    </tr>
+  </table>
+</div>

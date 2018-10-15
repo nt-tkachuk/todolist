@@ -1,0 +1,37 @@
+.panel {
+  height: 400px;
+  border: 1px solid #e7ebea;
+  position: relative;
+  color: #999999;
+}
+
+.verticalAlign {
+  background: #ff0000;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+td {
+  /*border: 1px solid blue;*/
+  border-top: 0px solid #aaaaaa;
+  border-bottom: 0px solid #aaaaaa;
+}
+
+.tdLineRight {
+  border-right: 1px solid #efdadf;
+}
+
+.tdLineRightGrey {
+  border-right: 1px solid #e7ebea;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+}

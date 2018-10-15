@@ -6,6 +6,7 @@ import { DesktopComponent } from './desktop/desktop.component';
 import { WindowListComponent } from './window-list/window-list.component';
 import { HeadListComponent } from './head-list/head-list.component';
 import { PanelAddTaskComponent } from './panel-add-task/panel-add-task.component';
+import { PanelTaskComponent } from './panel-task/panel-task.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PanelAddTaskComponent } from './panel-add-task/panel-add-task.component
     DesktopComponent,
     WindowListComponent,
     HeadListComponent,
-    PanelAddTaskComponent
+    PanelAddTaskComponent,
+    PanelTaskComponent
   ],
   imports: [
     BrowserModule
